@@ -1,0 +1,38 @@
+.singleAdd {
+  padding: 12px 14px 26px;
+  background: #f4f4f3;
+  &-white {
+    background: white;
+  }
+  &__img {
+    min-height: 157px;
+    min-width: 229px;
+    margin-bottom: 20px;
+  }
+  &__product {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  &__price {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 3px;
+  }
+  &__trader {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .singleAdd {
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

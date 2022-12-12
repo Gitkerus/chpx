@@ -1,0 +1,38 @@
+.content {
+  padding: 45px 155px 0;
+  &__adds {
+    &__title {
+      font-size: 24px;
+      line-height: 20px;
+      margin: 76px 0 45px;
+    }
+  }
+  &__sales {
+    &__btn {
+      font-size: 14px;
+      line-height: 18px;
+      min-width: 266px;
+      padding-right: 15px;
+      margin-top: 15px;
+      margin-bottom: 77px;
+    }
+    &__title {
+      font-size: 24px;
+      line-height: 20px;
+      margin-bottom: 63px;
+      margin-top: 63px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    padding: 0 0;
+    &MobileWrapper {
+      padding: 0px 30px 34px;
+    }
+    &__sales__btn {
+      margin: 35px 0;
+    }
+  }
+}

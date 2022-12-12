@@ -1,0 +1,34 @@
+.sales {
+  &__btn {
+    min-width: 149px;
+    padding: 11px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__rowBtn {
+    width: 149px;
+  }
+  &__rowText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+  }
+  &__rowWrapper {
+    &:hover {
+      background-color: #e5e5e5;
+    }
+    &:focus {
+      background-color: #e5e5e5;
+    }
+  }
+  &__Wrapper {
+    overflow-x: auto;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .sales__bottomBtn {
+    margin: 35px 0;
+  }
+}

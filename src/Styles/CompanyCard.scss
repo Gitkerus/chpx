@@ -1,0 +1,191 @@
+.companyCard {
+  background-image: url(../Assets/companyCard_background.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #f5f5f7;
+  width: 100%;
+  padding: 200px 276px;
+}
+
+.companyCompetences {
+  margin-top: 30px;
+  &__title {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 23px;
+  }
+  &__wrapper {
+    background: white;
+    padding: 20px 25px;
+    &__title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 22px;
+    }
+    &__description {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.companyContacts {
+  margin-top: 35px;
+  &__title {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  &__wrapper {
+    margin-top: 12px;
+    padding: 15px 30px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__owner {
+      display: flex;
+      gap: 42px;
+    }
+  }
+}
+
+.companyNews {
+  margin: 88px 0 35px;
+  &__title {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 28px 0;
+  }
+}
+
+.companySales {
+  &__title {
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 47px;
+  }
+  &__btn {
+    margin-top: 30px;
+    min-width: 204px;
+  }
+}
+
+.companyWrapper {
+  background: white;
+  padding: 23px 31px;
+  &__bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__adress {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      &__adressType {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+
+    &__title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 26px;
+    }
+    &__date {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+    }
+  }
+  &__top {
+    display: flex;
+    gap: 41px;
+    margin-bottom: 20px;
+    &__text {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-size: 14px;
+      line-height: 18px;
+      &__description {
+        margin-top: 13px;
+        font-family: "IBM Plex Sans";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+  &__vertLine {
+    border: 1px solid #aaaaaa;
+    margin: 12px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .companyCard {
+    padding: 32px 31px;
+  }
+
+  .companyContacts {
+    &__wrapper {
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-start;
+      &__owner {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  }
+  .companyWrapper {
+    &__top {
+      flex-direction: column;
+    }
+    &__bot {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+  }
+  .companyNews {
+    &__wrapper {
+      overflow: auto;
+      gap: 20px;
+    }
+  }
+}

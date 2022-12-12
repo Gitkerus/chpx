@@ -1,0 +1,230 @@
+.addsCard {
+  background: #f2f4f8;
+  padding: 52px 165px 120px;
+  display: flex;
+  gap: 30px;
+  &__btn {
+    min-width: 100%;
+    min-height: 36px;
+    padding: 9px 16px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  &__companyCard {
+    &__contacts {
+      margin-top: 25px;
+      background: #f2f4f8;
+      padding: 43px 27px 26px;
+      &__adds {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 13px;
+      }
+      &__avatar {
+        width: 63px;
+        height: 63px;
+        background: #074ee8;
+        border-radius: 8px;
+      }
+      &__btnWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      &__link {
+        font-family: "Roboto";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 8px;
+      }
+      &__header {
+        display: flex;
+        gap: 25px;
+      }
+      &__name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 7px;
+      }
+      &__vertLine {
+        margin: 29px 0 16px;
+        border: 1px solid #000000;
+      }
+    }
+    &__date {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__title {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 20px;
+      margin: 10px 0 10px;
+    }
+    &__price {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__leftWrapper {
+    width: auto;
+  }
+  &__rightWrapper {
+    min-width: 445px;
+    height: fit-content;
+    background: #ffffff;
+    padding: 34px 16px 12px;
+  }
+  &__trial {
+    background: #d9d9d9;
+    margin: 26px 35px;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &__text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 21px;
+    padding: 20px 25px 23px;
+    background: white;
+
+    &__bigImg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__note {
+    padding: 24px 30px 30px;
+    background: white;
+    margin-top: 56px;
+    &__title {
+      font-family: "Arial";
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 18px;
+      margin-bottom: 36px;
+    }
+    &__text {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  &__similarAdds {
+    &__btn {
+      margin: 40px 0 76px;
+      min-width: 204px;
+    }
+    &__description {
+      &__company {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 4px;
+        gap: 20px;
+      }
+      &__note {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &__title {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 7px;
+      }
+      &__price {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+    }
+    &__gallery {
+      width: fit-content;
+      &__img {
+        width: 200px;
+        height: auto;
+      }
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      margin-top: 76px;
+      margin-bottom: 34px;
+    }
+    &__Wrapper {
+      background: white;
+      padding: 12px 20px;
+      display: flex;
+      gap: 16px;
+    }
+  }
+  &__sliderWrapper {
+    padding: 0 165px;
+    margin-bottom: 20px;
+    &__title {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      margin: 20px 0 45px;
+    }
+  }
+}
+
+.addsCard__sliderWrapper div:has(.singleAdd) {
+  background: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .addsCard {
+    padding: 32px 31px;
+    flex-direction: column;
+    &__rightWrapper {
+      min-width: 100%;
+    }
+    &__similarAdds__Wrapper {
+      flex-direction: column;
+    }
+    &__sliderWrapper {
+      padding: 0 31px;
+    }
+  }
+}

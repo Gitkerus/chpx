@@ -1,0 +1,36 @@
+.content__presentation {
+  padding: 68px 75px 60px;
+  width: 100%;
+  background-color: #212121;
+  color: white;
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 18px;
+    margin-bottom: 41px;
+  }
+  &__serviceText {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 17px;
+    width: 300px;
+  }
+  &__b2bText {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 31px;
+  }
+  &__btn {
+    min-width: 204px;
+    min-height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .content__presentation {
+    padding: 68px 28px 60px;
+  }
+}

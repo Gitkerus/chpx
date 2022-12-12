@@ -1,0 +1,156 @@
+.saleCard {
+  background: #f4f4f4;
+  padding: 61px 168px 54px;
+  &__adds {
+    padding: 0 168px;
+    background: white;
+    margin-bottom: 20px;
+    &__title {
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+      margin: 20px 0 45px;
+    }
+  }
+  &__product {
+    background: white;
+    padding: 34px 20px 17px;
+    &__company {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &__date {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 9px;
+    }
+    &__description {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 18px;
+      margin-bottom: 23px;
+    }
+    &__descriptionText {
+      font-family: "Arial";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 30px;
+    }
+    &__file {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+      color: #0f62fe;
+      font-family: "Arial";
+      font-style: normal;
+      &__format {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 8px 0 2px;
+      }
+      &__name {
+        font-size: 12px;
+        line-height: 20px;
+        color: #000000;
+      }
+      &__size {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+    &__filesWrapper {
+      display: flex;
+      gap: 25px;
+    }
+    &__singleFile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 94px;
+      width: 94px;
+      border-radius: 8px;
+      &-blue {
+        background: #0f62fe;
+      }
+      &-grey {
+        background: #f2f4f8;
+      }
+    }
+    &__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      margin: 19px 0 16px;
+    }
+  }
+  &__order {
+    width: fit-content;
+    margin-top: 44px;
+    background: white;
+    padding: 44px 63px 34px;
+    &__addFiles {
+      width: 320px;
+    }
+    &__bottomWrapper {
+      display: flex;
+      justify-content: space-between;
+      gap: 31px;
+    }
+    &__select {
+      width: 288px;
+    }
+    &__textArea {
+      margin-bottom: 19px;
+    }
+    &__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  &__sales {
+    &__title {
+      margin: 60px 0;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .saleCard {
+    padding: 32px;
+    &__adds {
+      padding: 0 32px;
+    }
+    &__order {
+      padding: 30px 20px;
+      &__bottomWrapper {
+        flex-direction: column;
+      }
+    }
+  }
+}

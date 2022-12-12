@@ -1,0 +1,36 @@
+.slider {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  &__btn {
+    position: absolute;
+    top: calc(50% - 58px);
+    padding: 51px 8px;
+    &-left {
+      left: 0;
+      &-wide {
+        left: -55px;
+      }
+    }
+    &-right {
+      right: 0;
+      &-wide {
+        right: -55px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    &__btn-adds {
+      display: none;
+    }
+    &__btn-left-wide {
+      left: -26px;
+    }
+    &__btn-right-wide {
+      right: -26px;
+    }
+  }
+}

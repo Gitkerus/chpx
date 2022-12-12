@@ -1,0 +1,25 @@
+.products {
+  margin-top: 84px;
+  &__btn {
+    min-width: 204px;
+    padding-right: 15px;
+    margin-top: 22px;
+  }
+  &__container {
+    display: flex;
+    gap: 31px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 20px;
+    margin-bottom: 44px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .products {
+    margin-top: 30px;
+  }
+}

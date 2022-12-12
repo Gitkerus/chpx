@@ -1,0 +1,115 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 8px 13px 40px 25px;
+
+  &-mobile {
+    &__bottomButton {
+      background: transparent;
+      border: none;
+    }
+
+    &__botWrapper {
+      position: fixed;
+      bottom: 0;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #393939;
+      padding: 12px 33px;
+      z-index: 10;
+    }
+
+    &__button {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 15px;
+      min-height: 41px;
+      min-width: 217px;
+    }
+
+    &__topWrapper {
+      margin: 10px 7px 8px 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: "IBM Plex Sans";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 18px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    min-width: 204px;
+    min-height: 46px;
+
+    &_login {
+      min-width: 175px;
+      min-height: 35px;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8.5px 16px;
+    }
+
+    &_publish {
+      min-width: 217px;
+    }
+  }
+
+  &__region {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: "IBM Plex Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.32px;
+  }
+
+  &__rightWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: flex-end;
+  }
+  &__search {
+    margin-top: 13px;
+    min-height: 46px;
+
+    &Wrapper {
+      flex-grow: 4;
+      margin-right: 16px;
+      gap: 11px;
+    }
+  }
+
+  &__select {
+    width: 164px;
+  }
+
+  &__title {
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 18px;
+  }
+}
+
+.cds {
+  &--search-input {
+    min-height: 46px;
+  }
+  &--select-input {
+    height: 46px;
+  }
+}

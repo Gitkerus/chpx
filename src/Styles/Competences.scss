@@ -1,0 +1,29 @@
+.competences {
+  margin-top: 56px;
+  &Wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    min-width: fit-content;
+  }
+
+  &__btn {
+    min-width: 204px;
+    padding-right: 15px;
+    margin-top: 22px;
+  }
+
+  &__title {
+    margin-bottom: 37px;
+    font-size: 24px;
+    line-height: 20px;
+  }
+}
